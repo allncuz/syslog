@@ -24,8 +24,7 @@ jobs:
             set -euo pipefail
 
             echo "📁 Navigating to project directory..."
-            REPO_DIR="/home/st"
-            SERVICE_NAME="sys_bot"
+            REPO_DIR="/home/syslog"
 
             cd $REPO_DIR
 
@@ -44,9 +43,5 @@ jobs:
             echo "📦 Installing dependencies..."
             pip install --upgrade pip
             pip install -r requirements.txt
-
-            echo "🚀 Restarting systemd service: $SERVICE_NAME"
-            sudo systemctl restart $SERVICE_NAME
-            sudo systemctl status $SERVICE_NAME --no-pager
 
             echo "✅ Deployment successful!"
