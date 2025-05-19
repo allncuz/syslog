@@ -30,7 +30,7 @@ jobs:
             cd $REPO_DIR
 
             echo "🔧 Making sure Git remote uses SSH..."
-            git remote set-url origin git@github.com:themusharraf/TeamUpBot.git
+            git remote set-url origin git@github.com:allncuz/syslog.git
 
             echo "🔄 Pulling latest changes from Git..."
             git pull origin main
